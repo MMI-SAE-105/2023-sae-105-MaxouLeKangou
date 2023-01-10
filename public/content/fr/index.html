@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuOpen:false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Light & Style - Exposition</title>
 </head>
 <body>
-    
+    <header class="header">
+        <nav class="header__nav" x-show="menuOpen">
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="../../img/icons/cross.svg" alt="Icon Cross for close menu">
+            </button>
+
+            <img src="../../img/logos/250px.png" alt="Logo Light & Space">
+            <ul class="header__nav--link">
+                <li class="header__nav--link1"><a href="">Accueil</a></li>
+                <li class="header__nav--link1"><a href="">Artistes</a></li>
+                <li class="header__nav--link1"><a href="">Exposition</a></li>
+                <li class="header__nav--link1"><a href="">Billetterie</a></li>
+                <li class="header__nav--link1"><a href="">Contact</a></li>
+            </ul>
+            <a class="header__nav--lang" href="../en/index.html"><img src="../../img/icons/en.svg" alt="Icon Anglais"></a>
+        </nav>
+
+        <button class="header__btn" @click="menuOpen = ! menuOpen">
+            <img src="../../img/icons/hamburger.svg" alt="Icon Hamburger">
+        </button>
+    </header>
 </body>
 </html>
