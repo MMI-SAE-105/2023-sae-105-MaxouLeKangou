@@ -3,5 +3,11 @@
     --light: #FFFFFF;
     --shade: #000000B3;
 
+    --heading-1: 26px;
+    --heading-2: 20px;
+    --heading-3: 18px;
+
+    --paragraph: 14px;
+
     --typo: 'Raleway', sans-serif;
 }

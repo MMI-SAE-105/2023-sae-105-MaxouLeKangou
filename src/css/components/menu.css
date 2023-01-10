@@ -1,0 +1,52 @@
+.header__nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    inset: 0 0 0 75px;
+    background: var(--light);
+
+    border-radius: 26px 0 0 20px;
+    z-index: 1;
+}
+
+.header__nav--btn {
+    position: absolute;
+    top: 60px;
+    right: 30px;
+
+    width: 40px;
+    height: 40px;
+}
+
+.header__nav--logo {
+    position: absolute;
+    top: 150px;
+
+    width: 125px;
+}
+.header__nav--link {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    top: 320px;
+    right: 40px;
+
+    text-align: right;
+}
+.header__nav--link a {
+    color: var(--dark);
+    font-size: var(--heading-1);
+    font-weight: 300;
+}
+
+.header__nav--lang {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+
+    width: 40px;
+    height: 40px;
+}

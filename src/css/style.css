@@ -17,3 +17,4 @@
 @import 'components/menu.css';
 
 /* Règles des layouts */
+@import 'layout/header.css';
