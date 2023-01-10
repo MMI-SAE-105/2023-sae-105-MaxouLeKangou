@@ -82,6 +82,57 @@
         </section>
 
         <span></span>
+
+        <section class="exposition">
+            <h1 class="exposition__title">Exposition</h1>
+            <div class="exposition__content">
+                <div class="exposition__calendar">
+                    <img class="exposition__calendar--icon" src="../../img/icons/calendar.svg" alt="Icon Calendrier">
+                    <p class="exposition__calendar--text">Du 13 avril au 23 juin 2023</p>
+                </div>
+                <div class="exposition__date">
+                    <img class="exposition__date--icon" src="../../img/icons/date.svg" alt="Icon Date">
+                    <p class="exposition__date--text" style="padding-top: 1px;">
+                        Mardi - 11h à 22h<br/>
+                        Mercredi - 11h à 20h<br/>
+                        Jeudi - 11h à 20h<br/>
+                        Vendredi - 11h à 20h<br/>
+                        Samedi - 11h à 20h<br/>
+                        Dimanche - 11h à 20h
+                    </p>
+                </div>
+                <div class="exposition__place">
+                    <img class="exposition__place--icon" src="../../img/icons/location.svg" alt="Icon Location">
+                    <p class="exposition__place--text">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <h1 class="prices__title">Billetterie</h1>
+            <div class="prices__content">
+                <img class="prices__img" src="../../img/icons/wallet.svg" alt="Icon porte feuille">
+                <ul class="prices__list" x-data="{ data: {} }" x-init="fetch('../../../src/json/prices.json').then(response => response.json()).then(json => data = json)" style="padding-top: 2.5px;">
+                    <template x-for="object of data">
+                        <li class="prices__list--items">
+                            <p x-text="object.name">name</p>
+                            <p x-text="object.price">price</p>
+                        </li>
+                    </template>
+                    <a class="prices__more" href="">voir plus</a>
+                </ul>
+            </div>
+        </section>
+
+        <span></span>
+
+        <footer>
+            <img src="../../img/logos/dark.svg" alt="Logo Light & Space">
+            <q>projet réalisé dans le cadre d’un exercice pédagogique au département<br/>
+                <strong>MMi de Montbéliard</strong>
+            </q>
+            <p class="footer__text">Tous droits réservés. <strong>Light & Space</strong></p>
+        </footer>
     </main>
 </body>
 </html>
