@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Light & Style - Regine Schumann</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav" x-show="menuOpen">
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="../../../img/icons/cross.svg" alt="Icon Cross for close menu">
+            </button>
+
+            <div class="header__nav--logo">
+                <img src="../../../img/logos/dark.svg" alt="Logo Light & Space">
+            </div>
+            <ul class="header__nav--link" @click="menuOpen = ! menuOpen">
+                <li class="header__nav--link1"><a href="../index.html#">Accueil</a></li>
+                <li class="header__nav--link1"><a href="../index.html#artists">Artistes</a></li>
+                <li class="header__nav--link1"><a href="../index.html#exposition">Exposition</a></li>
+                <li class="header__nav--link1"><a href="../index.html#prices">Billetterie</a></li>
+                <li class="header__nav--link1"><a href="../contact.html">Contact</a></li>
+            </ul>
+            <a class="header__nav--lang" href="../../en/index.html"><img src="../../../img/icons/en.svg" alt="Icon Anglais"></a>
+        </nav>
+
+        <button class="header__btn" @click="menuOpen = ! menuOpen">
+            <img src="../../../img/icons/hamburger.svg" alt="Icon Hamburger">
+        </button>
+    </header>
+    
+    <main class="artist">
+        <header class="artist__header">
+            <img src="../../../img/artistes/schumann/small.png" alt="Image of Schumann">
+            <h1 class="artist__title">Regine Schumann</h1>
+            <p class="artist__date">1961</p>
+        </header>
+
+        <section class="artist__content">
+            <article class="biography">
+                <h2 class="biography__title">Biographie</h2>
+                <p class="biography__paragraph">Regine Schumann est une artiste allemande née en 1961, qui se concentre sur les effets de lumière créés par des matériaux fluorescents dans son travail. Elle crée des installations et des sculptures qui utilisent des matériaux tels que des tubes fluorescents, des peintures fluorescentes et des filtres optiques pour produire des effets de lumière changeants et dynamiques. Ses œuvres ont souvent une dimension interactive, invitant le public à interagir avec elles pour découvrir les différents effets de lumière et de couleur. Cela fait d'elle une artiste importante dans le champ de l'art lumière, où elle se distingue par sa maitrise des matériaux et des techniques pour créer des œuvres qui stimulent les sens et suscitent l'émotion.</p>
+            </article>
+
+            <article class="works">
+                <h2 class="works__title">Oeuvres</h2>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="../index.html#" class="footer__img"><img src="../../../img/logos/dark.svg" alt="Logo Light & Space"></a>
+        <q class="footer__quote">
+            projet réalisé dans le cadre d’un exercice pédagogique au département<br/>
+            <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a>
+        </q>
+        <p class="footer__mention">Tous droits réservés. <a href="">Light & Space</a></p>
+    </footer>
+</body>
+</html>
