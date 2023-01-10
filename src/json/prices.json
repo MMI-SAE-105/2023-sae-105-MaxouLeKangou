@@ -1,22 +1,22 @@
 [
     {
-        "name": "Plein Tarif : " ,
+        "name": "Plein Tarif" ,
         "price": "11€" 
     },
     {
-        "name":"Tarif Réduit : ",
+        "name":"Tarif Réduit",
         "price": "7.5€"
     },
     {
-        "name":"Réduction 13 - 25 ans : ",
+        "name":"Réduction 13 - 25 ans",
         "price": "5€"
     },
     {
-        "name":"Fondation Carier Pass : ",
+        "name":"Fondation Carier Pass",
         "price": "18 à 50€"
     },
     {
-        "name":"Moins de 13 ans : ",
+        "name":"Moins de 13 ans",
         "price": "Gratuit"
     }
 ]
