@@ -40,7 +40,7 @@
     flex-direction: column;
     gap: 100px;
 
-    padding: 0 30px
+    padding: 0 30px;
 }
 .artists__content {
     text-align: center;
@@ -49,6 +49,7 @@
     font-size: var(--heading-2);
     font-weight: 600;
     line-height: 120%;
+    color: var(--light);
 
     margin: 40px 0 20px 0;
 }

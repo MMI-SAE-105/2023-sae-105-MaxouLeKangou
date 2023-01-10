@@ -18,12 +18,12 @@
             <div class="header__nav--logo">
                 <img src="../../img/logos/dark.svg" alt="Logo Light & Space">
             </div>
-            <ul class="header__nav--link">
-                <li class="header__nav--link1"><a href="">Accueil</a></li>
-                <li class="header__nav--link1"><a href="">Artistes</a></li>
-                <li class="header__nav--link1"><a href="">Exposition</a></li>
-                <li class="header__nav--link1"><a href="">Billetterie</a></li>
-                <li class="header__nav--link1"><a href="">Contact</a></li>
+            <ul class="header__nav--link" @click="menuOpen = ! menuOpen">
+                <li class="header__nav--link1"><a href="#">Accueil</a></li>
+                <li class="header__nav--link1"><a href="#artists">Artistes</a></li>
+                <li class="header__nav--link1"><a href="#exposition">Exposition</a></li>
+                <li class="header__nav--link1"><a href="#prices">Billetterie</a></li>
+                <li class="header__nav--link1"><a href="contact.html">Contact</a></li>
             </ul>
             <a class="header__nav--lang" href="../en/index.html"><img src="../../img/icons/en.svg" alt="Icon Anglais"></a>
         </nav>
@@ -41,47 +41,55 @@
             <a href="" class="presentation__btn"><p>DÉCOUVRIR</p></a>
         </section>
 
-        <span></span>
+        <span id="artists"></span>
 
         <section class="artists">
             <article class="artists__content">
-                <img src="../../img/artistes/howlett/big.png" alt="Image of Howlett" style="transform: rotate(5deg);">
-                <div class="artists__content--text">
-                    <h2 class="artists__content--title">Ray Howlett - 1940</h2>
-                    <p class="artists__content--paragraph">Un sculpteur contemporain américain d'après-guerre.</p>
-                    <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
-                </div>
+                <a href="artists/artist-1.html">
+                    <img src="../../img/artistes/howlett/big.png" alt="Image of Howlett" style="transform: rotate(5deg);">
+                    <div class="artists__content--text">
+                        <h2 class="artists__content--title">Ray Howlett - 1940</h2>
+                        <p class="artists__content--paragraph">Un sculpteur contemporain américain d'après-guerre.</p>
+                        <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
+                    </div>
+                </a>
             </article>
 
             <article class="artists__content">
-                <img src="../../img/artistes/dill/big.png" alt="Image of Dill" style="transform: rotate(-5deg);">
-                <div class="artists__content--text">
-                    <h2 class="artists__content--title">Laddie John Dill - 1943</h2>
-                    <p class="artists__content--paragraph">Un artiste visuel américain.</p>
-                    <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
-                </div>
+                <a href="artists/artist-2.html">
+                    <img src="../../img/artistes/dill/big.png" alt="Image of Dill" style="transform: rotate(-5deg);">
+                    <div class="artists__content--text">
+                        <h2 class="artists__content--title">Laddie John Dill - 1943</h2>
+                        <p class="artists__content--paragraph">Un artiste visuel américain.</p>
+                        <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
+                    </div>
+                </a>
             </article>
 
             <article class="artists__content">
-                <img src="../../img/artistes/guedel/big.png" alt="Image of Guedel" style="transform: rotate(5deg);">
-                <div class="artists__content--text">
-                    <h2 class="artists__content--title">Kaloust Guedel - 1956</h2>
-                    <p class="artists__content--paragraph">Un artiste et théoricien autodidacte.</p>
-                    <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
-                </div>
+                <a href="artists/artist-3.html">
+                    <img src="../../img/artistes/guedel/big.png" alt="Image of Guedel" style="transform: rotate(5deg);">
+                    <div class="artists__content--text">
+                        <h2 class="artists__content--title">Kaloust Guedel - 1956</h2>
+                        <p class="artists__content--paragraph">Un artiste et théoricien autodidacte.</p>
+                        <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
+                    </div>
+                </a>
             </article>
 
             <article class="artists__content">
-                <img src="../../img/artistes/schumann/big.png" alt="Image of Schumann" style="transform: rotate(-5deg);">
-                <div class="artists__content--text">
-                    <h2 class="artists__content--title">Regine Schumann - 1961</h2>
-                    <p class="artists__content--paragraph">Une peintre & light artiste allemande.</p>
-                    <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
-                </div>
+                <a href="artists/artist-4.html">
+                    <img src="../../img/artistes/schumann/big.png" alt="Image of Schumann" style="transform: rotate(-5deg);">
+                    <div class="artists__content--text">
+                        <h2 class="artists__content--title">Regine Schumann - 1961</h2>
+                        <p class="artists__content--paragraph">Une peintre & light artiste allemande.</p>
+                        <a href="" class="artists__content--btn"><p>VOIR PLUS</p></a>
+                    </div>
+                </a>
             </article>
         </section>
 
-        <span></span>
+        <span id="exposition"></span>
 
         <section class="exposition">
             <h1 class="exposition__title">Exposition</h1>
@@ -108,7 +116,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section id="prices" class="prices">
             <h1 class="prices__title">Billetterie</h1>
             <div class="prices__content">
                 <img class="prices__img" src="../../img/icons/wallet.svg" alt="Icon porte feuille">
@@ -120,7 +128,7 @@
                             <p x-text="object.price">price</p>
                         </li>
                     </template>
-                    <a class="prices__more" href="">voir plus</a>
+                    <a class="prices__more" href="https://fondation-cartier.tickeasy.com/fr-FR/accueil">voir plus</a>
                 </ul>
             </div>
         </section>
