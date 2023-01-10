@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuOpen:false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Light & Style - Regine Schumann</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav" x-show="menuOpen">
+            <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
+                <img src="../../../../../img/icons/cross.svg" alt="Icon Cross for close menu">
+            </button>
+
+            <div class="header__nav--logo">
+                <img src="../../../../../img/logos/dark.svg" alt="Logo Light & Space">
+            </div>
+            <ul class="header__nav--link" @click="menuOpen = ! menuOpen">
+                <li class="header__nav--link1"><a href="../../../index.html#">Accueil</a></li>
+                <li class="header__nav--link1"><a href="../../../index.html#schumann">Artistes</a></li>
+                <li class="header__nav--link1"><a href="../../../index.html#exposition">Exposition</a></li>
+                <li class="header__nav--link1"><a href="../../../index.html#prices">Billetterie</a></li>
+                <li class="header__nav--link1"><a href="../../../contact.html">Contact</a></li>
+            </ul>
+            <a class="header__nav--lang" href="../../../../en/index.html"><img src="../../../../../img/icons/en.svg" alt="Icon Anglais"></a>
+        </nav>
+
+        <button class="header__btn" @click="menuOpen = ! menuOpen">
+            <img src="../../../../../img/icons/hamburger.svg" alt="Icon Hamburger">
+        </button>
+    </header>
+    
+    <main class="work">
+        <header class="work__header">
+            <img src="../../../../../img/artistes/schumann/works/touch_me_2011.png" alt="Image of Touch Me">
+            <h1 class="work__title">Touch Me</h1>
+            <p class="work__date">2011</p>
+        </header>
+        <article class="description">
+            <h2 class="description__title">Description</h2>
+            <p class="description__paragraph">En utilisant des matériaux simples et en invitant les visiteurs à interagir avec l'œuvre, Schumann crée une expérience immersive qui met en évidence les propriétés physiques de la lumière et de l'espace. "Touch Me" est un bel exemple de la manière dont l'art peut utiliser des éléments simples pour créer des expériences visuelles et sensorielles riches et complexes.</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <a href="../../../index.html#" class="footer__img"><img src="../../../../../img/logos/dark.svg" alt="Logo Light & Space"></a>
+        <q class="footer__quote">
+            projet réalisé dans le cadre d’un exercice pédagogique au département<br/>
+            <a href="http://mmimontbeliard.com/">MMi de Montbéliard</a>
+        </q>
+        <p class="footer__mention">Tous droits réservés. <a href="">Light & Space</a></p>
+    </footer>
+</body>
+</html>
