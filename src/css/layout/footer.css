@@ -1,0 +1,29 @@
+.footer {
+    background: var(--light);
+    color: var(--dark);
+    padding: 40px 30px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer__img img {
+    width: 110px;
+}
+.footer__quote {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 120%;
+
+    margin: 50px 0 70px 0;
+}
+.footer__mention {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 120%;
+}
+.footer a {
+    color: var(--dark);
+    text-decoration: underline;
+}

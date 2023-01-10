@@ -18,4 +18,5 @@
 
 /* Règles des layouts */
 @import 'layout/header.css';
-@import 'layout/home.css'
+@import 'layout/footer.css';
+@import 'layout/home.css';
