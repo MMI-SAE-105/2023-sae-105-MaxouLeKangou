@@ -20,13 +20,12 @@
 }
 
 .header__nav--logo {
-    position: absolute;
+    position: relative;
     top: 150px;
-
+    margin: 0 auto;
     width: 125px;
 }
 .header__nav--link {
-    position: absolute;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -35,6 +34,8 @@
     right: 40px;
 
     text-align: right;
+    margin: 250px 0 0 0;
+    padding: 0;
 }
 .header__nav--link a {
     color: var(--dark);
