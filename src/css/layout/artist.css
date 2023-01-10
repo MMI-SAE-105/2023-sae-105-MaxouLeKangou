@@ -1,0 +1,43 @@
+.artist {
+    margin-top: 150px;
+}
+.artist__header {
+    text-align: center;
+}
+.artist__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+.artist__date {
+    font-size: var(--paragraph);
+    font-weight: 500;
+    color: var(--shade-light);
+}
+
+.artist__content {
+    margin: 100px 0;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.biography__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.biography__paragraph {
+    font-size: var(--paragraph);
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--shade-light);
+}
+
+.works__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
