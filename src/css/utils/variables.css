@@ -1,7 +1,8 @@
 :root {
     --dark: #000000;
     --light: #FFFFFF;
-    --shade: #000000B3;
+    --shade-dark: #000000B3;
+    --shade-light: #FFFFFFB3;
 
     --heading-1: 26px;
     --heading-2: 20px;
