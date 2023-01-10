@@ -1,3 +1,7 @@
 :root {
-    
+    --black: #000000;
+    --white: #FFFFFF;
+    --shade: #000000B3;
+
+    --typo: 'Raleway', sans-serif;
 }
