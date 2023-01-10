@@ -1,0 +1,43 @@
+.work {
+    margin-top: 150px;
+}
+.work__header {
+    text-align: center;
+}
+.work__header img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.work__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+.work__date {
+    font-size: var(--paragraph);
+    font-weight: 500;
+    color: var(--shade-light);
+}
+.works__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.description {
+    margin: 100px 0;
+    padding: 0 30px;
+}
+
+.description__title {
+    font-size: var(--heading-2);
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+.description__paragraph {
+    font-size: var(--paragraph);
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--shade-light);
+}
