@@ -41,3 +41,51 @@
     font-weight: 600;
     margin: 0 0 20px 0;
 }
+
+.carousel {
+    position: relative;
+}
+
+.carousel__btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--light);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    top: 50%;
+}
+.carousel__btn img {
+    width: 20px;
+}
+.carousel__btn--left {
+    rotate: -90deg;
+    left: 10px;
+}
+.carousel__btn--right {
+    rotate: 90deg;
+    right: 10px;
+}
+
+.carousel__btn img {
+    filter: invert(1);
+}
+.carousel__display {
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+    width: 100%;
+    scroll-snap-type: inline;
+    text-align: center;
+}
+.carousel__screen {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    text-align: center;
+}
+
+.carousel__display figure {
+    margin: 0;
+}
