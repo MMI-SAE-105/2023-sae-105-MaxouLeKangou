@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuOpen:false}">
+<html lang="fr" x-data="{menuOpen:false}" :class="menuOpen && 'noScroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,9 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav" x-show="menuOpen">
+        <nav class="header__nav" 
+            x-show="menuOpen"
+            >
             <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
                 <img src="../../img/icons/cross.svg" alt="Icon Cross for close menu">
             </button>
