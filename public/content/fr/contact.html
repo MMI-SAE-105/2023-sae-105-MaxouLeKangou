@@ -10,7 +10,10 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav" x-show="menuOpen">
+        <nav class="header__nav" 
+            x-show="menuOpen"
+            x-transition.duration.600ms
+        >
             <button class="header__nav--btn" @click="menuOpen = ! menuOpen">
                 <img src="../../img/icons/cross.svg" alt="Icon Cross for close menu">
             </button>
