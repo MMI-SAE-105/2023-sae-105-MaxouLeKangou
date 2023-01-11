@@ -50,18 +50,30 @@
                 <h2 class="works__title">Oeuvres</h2>
                 <carousel x-data="{hrefCourant: '#screen-1'}" class="works__carousel">
                     <div class="carousel">
-                        <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carousel__btn carousel__btn--left" aria-label="slide avant"><img src="../../../img/icons/arrow.svg" alt="Image of Arrow"></button>
-                        <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carousel__btn carousel__btn--right" aria-label="slide après"><img src="../../../img/icons/arrow.svg" alt="Image of Arrow"></button>
+                        <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carousel__btn carousel__btn--left" aria-label="slide avant"><img src="../../../img/icons/arrow-left.svg" alt="Image of Arrow"></button>
+                        <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carousel__btn carousel__btn--right" aria-label="slide après"><img src="../../../img/icons/arrow-right.svg" alt="Image of Arrow"></button>
                         
                         <section x-ref="parent" @scroll.debounce.300ms.passive="hrefCourant = '#'+[...$refs.parent.children].fond(e=>e.getBoundingClientRect().x>=0).id" class="carousel__display">
                             <figure id="screen-1" class="carousel__screen">
                                 <a href=""><img src="../../../img/artistes/howlett/works/soft_edges_1984.png" alt="Image of Soft Edges"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Soft Edges</h2>
+                                    <p class="carousel__date">1984</p>
+                                </div>
                             </figure>
                             <figure id="screen-2" class="carousel__screen">
                                 <a href=""><img src="../../../img/artistes/howlett/works/dropping_in_2001.png" alt="Image of Dropping In"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Dropping In</h2>
+                                    <p class="carousel__date">2001</p>
+                                </div>
                             </figure>
                             <figure id="screen-3" class="carousel__screen">
                                 <a href=""><img src="../../../img/artistes/howlett/works/ocean_waves_2005.png" alt="Image of Ocean Waves"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Ocean Waves</h2>
+                                    <p class="carousel__date">2005</p>
+                                </div>
                             </figure>
                         </section>
                     </div>

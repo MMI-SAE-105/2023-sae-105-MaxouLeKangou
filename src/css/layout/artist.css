@@ -60,16 +60,10 @@
     width: 20px;
 }
 .carousel__btn--left {
-    rotate: -90deg;
     left: 10px;
 }
 .carousel__btn--right {
-    rotate: 90deg;
     right: 10px;
-}
-
-.carousel__btn img {
-    filter: invert(1);
 }
 .carousel__display {
     display: flex;
@@ -88,4 +82,14 @@
 
 .carousel__display figure {
     margin: 0;
+}
+.carousel__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.carousel__date {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--shade-light);
 }
