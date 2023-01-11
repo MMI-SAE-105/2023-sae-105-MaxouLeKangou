@@ -48,6 +48,36 @@
             
             <article class="works">
                 <h2 class="works__title">Oeuvres</h2>
+                <carousel x-data="{hrefCourant: '#screen-1'}" class="works__carousel">
+                    <div class="carousel">
+                        <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carousel__btn carousel__btn--left" aria-label="slide avant"><img src="../../../img/icons/arrow-left.svg" alt="Image of Arrow"></button>
+                        <button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carousel__btn carousel__btn--right" aria-label="slide après"><img src="../../../img/icons/arrow-right.svg" alt="Image of Arrow"></button>
+                        
+                        <section x-ref="parent" @scroll.debounce.300ms.passive="hrefCourant = '#'+[...$refs.parent.children].fond(e=>e.getBoundingClientRect().x>=0).id" class="carousel__display">
+                            <figure id="screen-1" class="carousel__screen">
+                                <a href="../artists/works/artist-2/work-1.html"><img src="../../../img/artistes/dill/works/aerial_landscape_1970.png" alt="Image of Aerial Landscape"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Aerial Landscape</h2>
+                                    <p class="carousel__date">1970</p>
+                                </div>
+                            </figure>
+                            <figure id="screen-2" class="carousel__screen">
+                                <a href="../artists/works/artist-2/work-2.html"><img src="../../../img/artistes/dill/works/red_tide_1971.png" alt="Image of Red Tide"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Red Tide</h2>
+                                    <p class="carousel__date">1971</p>
+                                </div>
+                            </figure>
+                            <figure id="screen-3" class="carousel__screen">
+                                <a href="../artists/works/artist-2/work-3.html"><img src="../../../img/artistes/dill/works/volcanic_dance_2012.png" alt="Image of Volcanic Dance"></a>
+                                <div class="carousel__text">
+                                    <h2 class="carousel__title">Volcanic Dance</h2>
+                                    <p class="carousel__date">2012</p>
+                                </div>
+                            </figure>
+                        </section>
+                    </div>
+                </carousel>
             </article>
         </section>
     </main>
