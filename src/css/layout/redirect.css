@@ -1,0 +1,16 @@
+.nopage {
+    text-align: center;
+}
+.nopage img {
+    margin: 150px 0 70px 0;
+}
+
+.redirection {
+    text-align: center;
+}
+.redirection img {
+    margin: 150px 0 70px 0;
+}
+.redirection h1 {
+    text-decoration: underline;
+}
