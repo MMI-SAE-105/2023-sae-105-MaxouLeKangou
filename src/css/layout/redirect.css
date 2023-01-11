@@ -11,6 +11,9 @@
 .redirection img {
     margin: 150px 0 70px 0;
 }
+.redirection a {
+    color: var(--light);
+}
 .redirection h1 {
     text-decoration: underline;
 }
